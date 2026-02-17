@@ -9,15 +9,22 @@
 </head>
 <body>
 
-<header>
-<nav>
+<div class="header-wrapper">
+<div class="nav-container">
+<nav id="navMenu">
 <a href="index.html">首頁</a>
 <a href="about.html">個人簡介</a>
 <a href="projects.html">專案成就</a>
 <a href="conference.html">研討會成果</a>
 <a href="contact.html">聯絡方式</a>
 </nav>
-</header>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
 
 
 <div class="section-card">
@@ -28,5 +35,6 @@
 
 
 <footer>© 2025 Bertram Chu</footer>
+<script src="script.js"></script>
 </body>
 </html>

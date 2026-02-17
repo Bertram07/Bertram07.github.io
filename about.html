@@ -9,26 +9,163 @@
 </head>
 <body>
 
-<header>
-<nav>
+<div class="header-wrapper">
+<div class="nav-container">
+<nav id="navMenu">
 <a href="index.html">首頁</a>
 <a href="about.html">個人簡介</a>
 <a href="projects.html">專案成就</a>
 <a href="conference.html">研討會成果</a>
 <a href="contact.html">聯絡方式</a>
 </nav>
-</header>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
 
 
-<div class="section-card">
-<h2>個人簡介</h2>
-<p>資訊管理碩士，專精於資訊系統架構、AI 模型應用與區塊鏈驗證機制。</p>
+<div class="section-card about-wrapper">
 
-<a href="assets/Bertram_Chu_Resume.pdf" class="btn" download>下載 PDF 履歷</a>
-<a href="assets/Bertram_Chu_Autobiography.pdf" class="btn" download style="margin-left:15px;">下載 PDF 自傳</a>
+<!-- 個人簡介區 -->
+<div class="about-intro about-layout">
+
+<!-- 左側：照片 -->
+<div class="about-photo">
+<img src="image/profile.jpg" alt="Bertram Chu">
+</div>
+
+<!-- 右側：文字 -->
+<div class="about-content">
+
+<h2>About Me</h2>
+<h3 class="about-name">朱哲弘</h3>
+
+<p class="about-text">
+    我是朱哲弘，來自新北板橋，是2025應屆畢業生，畢業於國立臺北大學資訊管理研究所。
+    我專注於資訊系統與資訊安全，善於建置系統運作架構與開發應用網站的前端與後端。
+    注重團隊溝通並持續追求自我進步，同時也在專案成果中展現創意與價值。
+</p>
+
+<div class="tag-group">
+    <span>#資訊系統</span>
+    <span>#資訊安全</span>
+    <span>#溝通合作</span>
+    <span>#高執行力</span>
+    <span>#反思學習</span>
+</div>
+
+<div class="btn-group">
+    <a href="assets/Bertram_Chu_Resume.pdf" class="btn" download>下載 PDF 履歷</a>
+    <a href="assets/Bertram_Chu_Autobiography.pdf" class="btn" download>下載 PDF 自傳</a>
+</div>
+
+</div>
+</div>
+
+<!-- 學歷區 -->
+<div class="about-block">
+    <h2>Education</h2>
+
+    <div class="timeline-item">
+    <h4>國立臺北大學</h4>
+    <p>資訊管理研究所 碩士畢業</p>
+    <span>2023 / 9 – 2025 / 6</span>
+    </div>
+
+    <div class="timeline-item">
+    <h4>長庚大學</h4>
+    <p>資訊管理學系 學士畢業</p>
+    <span>2019 / 9 – 2023 / 6</span>
+    </div>
+</div>
+
+<!-- 專長區 -->
+<div class="about-block">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
+    <div class="skill-card">
+        <h4>Programming</h4>
+        <p><strong>Backend</strong>｜Python、Java、PHP、Flask</p>
+        <p><strong>Frontend</strong>｜HTML、CSS、JavaScript</p>
+        <p><strong>Database</strong>｜MySQL</p>
+        <p><strong>OS</strong>｜Windows、Linux</p>
+        <p><strong>Web Server</strong>｜Apache</p>
+    </div>
+
+    <div class="skill-card">
+        <h4>AI / Machine Learning</h4>
+        <p>結構化與非結構化資料清洗</p>
+        <p>KNN、W-KNN、SVM</p>
+        <p>ResNet 深度學習模型</p>
+    </div>
+
+    <div class="skill-card">
+        <h4>Other</h4>
+        <p>爬蟲（反爬機制處理）</p>
+        <p>Git / Github</p>
+        <p>Google GCP / AWS</p>
+        <p>ISO 27001 主導稽核員</p>
+    </div>
+
+    </div>
+</div>
+<!-- 工作經驗區 -->
+<div class="about-block">
+<h2>Experience</h2>
+
+<div class="experience-grid">
+
+<!-- 研究助理 -->
+<div class="experience-card">
+    <div class="exp-header">
+    <h4>研究助理</h4>
+    <span>2024 / 2 – 2025 / 6 ｜ 1年5個月</span>
+    </div>
+
+    <p class="exp-company">
+    國立臺北大學資訊管理研究所 ｜ 新北市三峽區
+    </p>
+
+    <ul>
+    <li>協助研究計畫執行與行政事項</li>
+    <li>透過 IRB 蒐集網球與揮拍軌跡資料</li>
+    <li>標記資料集並訓練模型</li>
+    <li>設計 W-KNN演算法節點比對回饋建議</li>
+    <li>建置 2D / 3D 視覺化畫面系統</li>
+    </ul>
+</div>
+
+<!-- 資安實習 -->
+<div class="experience-card">
+    <div class="exp-header">
+    <h4>資安系統稽核顧問實習生</h4>
+    <span>2023 / 9 – 2024 / 2｜ 6個月</span>
+    </div>
+
+    <p class="exp-company">
+    安侯建業聯合會計師事務所 ｜ 台北市信義區
+    </p>
+
+    <ul>
+    <li>分析駭客入侵模式並進行資安控管</li>
+    <li>協助客戶降低資安風險</li>
+    <li>陪同 Mentor 實地稽核</li>
+    <li>紀錄系統缺失並提供改善建議</li>
+    </ul>
+</div>
+
+</div>
+</div>
+
 </div>
 
 
 <footer>© 2025 Bertram Chu</footer>
+<script src="script.js"></script>
 </body>
 </html>
