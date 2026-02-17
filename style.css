@@ -1,0 +1,116 @@
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(180deg,#ffffff,#f5f7fa);
+    color:#1e293b;
+}
+
+/* Top Right Fixed Nav */
+header{
+    position:fixed;
+    top:20px;
+    right:40px;
+    z-index:1000;
+}
+nav{
+    display:flex;
+    gap:25px;
+    background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(10px);
+    padding:12px 25px;
+    border-radius:40px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+nav a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:600;
+}
+nav a:hover{
+    color:#2563eb;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.hero h1{
+    font-size:3rem;
+    font-weight:700;
+}
+.hero p{
+    margin-top:1rem;
+    font-size:1.2rem;
+    color:#64748b;
+}
+
+.btn{
+    margin-top:2rem;
+    padding:14px 28px;
+    border-radius:30px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* Section Card */
+.section-card{
+    max-width:1100px;
+    margin:120px auto 80px auto;
+    padding:3rem;
+    background:white;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.05);
+}
+
+h2{
+    margin-bottom:2rem;
+    font-size:2rem;
+}
+
+/* Portfolio Cards */
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+.card{
+    background:linear-gradient(145deg,#ffffff,#f0f3f8);
+    border-radius:20px;
+    padding:2rem;
+    box-shadow:0 15px 35px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    height:220px;
+    object-fit:cover;
+}
+
+footer{
+    text-align:center;
+    padding:2rem;
+    color:#94a3b8;
+}
