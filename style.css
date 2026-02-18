@@ -684,8 +684,18 @@ text-align: center;
 
 .activity-gallery {
 position: relative;
-min-height: 350px;
-margin-top: 30px;
+min-height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+.activity-gallery img {
+position: relative;   /* 關鍵：取消 absolute */
+width: 90%;
+max-width: 400px;
+transform: none;      /* 取消旋轉 */
 }
 }
 
